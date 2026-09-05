@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chamseddine Mecharbat — Administrateur Systèmes &amp; Réseaux</title>
+<meta name="description" content="Portfolio de Chamseddine Mecharbat, étudiant BTS SIO option SISR, à la recherche d'une alternance en administration systèmes, réseaux et cybersécurité.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128187;</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">C<span>M</span><span class="cursor">_</span></a>
+    <button id="navToggle" class="nav-toggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Accueil</a></li>
+      <li><a href="#about">Profil</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="assets/CV_Chamseddine_Mecharbat.pdf" target="_blank" class="btn-nav">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <canvas id="matrixCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">$ whoami</p>
+      <h1>Chamseddine <span class="accent">Mecharbat</span></h1>
+      <h2 class="typed-wrap">
+        <span id="typed"></span><span class="type-cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Étudiant en BTS SIO option SISR, passionné par l'administration réseau,
+        la supervision d'infrastructures et la cybersécurité. À la recherche d'une
+        <strong>alternance</strong> pour la rentrée.
+      </p>
+      <div class="hero-meta">
+        <span>📍 Huningue, Alsace</span>
+        <span>🚗 Mobilité régionale</span>
+        <span>🎓 BTS SIO SISR — IRIS Mediaschool</span>
+      </div>
+      <div class="hero-cta">
+        <a href="assets/CV_Chamseddine_Mecharbat.pdf" target="_blank" class="btn btn-primary">Télécharger le CV</a>
+        <a href="https://www.linkedin.com/in/chamseddine-mecharbat-2a0888356/" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Défiler vers le bas"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <span class="section-tag">01</span>
+      <h2>Profil</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Actuellement en <strong>BTS SIO option SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux)
+          à IRIS Mediaschool Strasbourg, je conçois, déploie et sécurise des infrastructures informatiques
+          complètes : câblage, VLAN, pare-feu, supervision, virtualisation et cybersécurité offensive/défensive.
+        </p>
+        <p>
+          Mon parcours en entreprise (Sigvaris Group) m'a donné une solide expérience du support technique
+          terrain et du déploiement de parcs informatiques à grande échelle. Je recherche aujourd'hui une
+          <strong>alternance</strong> pour continuer à monter en compétences sur l'administration systèmes,
+          réseaux et sécurité.
+        </p>
+        <div class="about-traits">
+          <span class="trait">Détermination</span>
+          <span class="trait">Persévérance</span>
+          <span class="trait">Ponctualité</span>
+          <span class="trait">Discipline</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <ul class="info-list">
+          <li><span>Né le</span><strong>03/01/2006</strong></li>
+          <li><span>Nationalité</span><strong>Française</strong></li>
+          <li><span>Permis</span><strong>B — Véhicule personnel</strong></li>
+          <li><span>Langues</span><strong>FR (natif), EN (B2), DE (A2)</strong></li>
+          <li><span>Échecs</span><strong>Elo ~1057 (chess.com)</strong></li>
+          <li><span>Sport</span><strong>Ex niveau National — sport de combat</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="section-head">
+      <span class="section-tag">02</span>
+      <h2>Compétences</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-head">
+          <span class="skill-icon">🛡️</span>
+          <h3>Cybersécurité</h3>
+        </div>
+        <ul class="tag-list">
+          <li>Wireshark</li><li>Nmap</li><li>Netcat</li><li>Fail2Ban</li>
+          <li>pfSense</li><li>Snort</li><li>IPTables</li><li>Active Directory</li>
+          <li>Metasploit</li><li>John the Ripper</li><li>Nikto</li>
+          <li>OpenVPN</li><li>WireGuard</li><li>GnuPG (GPG)</li>
+          <li>Zabbix</li><li>ELK Stack</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-head">
+          <span class="skill-icon">🖧</span>
+          <h3>Systèmes &amp; Réseaux</h3>
+        </div>
+        <ul class="tag-list">
+          <li>Windows Server / AD</li><li>Windows Client</li>
+          <li>NTLite / Sysprep / WSUS</li><li>VLAN</li><li>Cisco</li>
+          <li>Switch / Routeur</li><li>DHCP / DNS / Web</li>
+          <li>VMware Workstation</li><li>Recuva</li><li>TeamViewer</li>
+          <li>CrystalDiskInfo</li><li>MemTest86</li><li>HWMonitor</li>
+          <li>Malwarebytes</li><li>AdwCleaner</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-head">
+          <span class="skill-icon">🌐</span>
+          <h3>Langues</h3>
+        </div>
+        <div class="lang-bars">
+          <div class="lang-bar"><span>Français</span><div class="bar"><div style="width:100%"></div></div><em>Langue maternelle</em></div>
+          <div class="lang-bar"><span>Anglais</span><div class="bar"><div style="width:75%"></div></div><em>B2 scolaire ++</em></div>
+          <div class="lang-bar"><span>Allemand</span><div class="bar"><div style="width:35%"></div></div><em>A2 scolaire ++</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-head">
+      <span class="section-tag">03</span>
+      <h2>Expérience professionnelle</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">01/2026 — 02/2026</div>
+          <h3>Stagiaire Technicien Support</h3>
+          <p class="timeline-sub">Sigvaris — Huningue</p>
+          <p>Prise en charge des tickets utilisateurs et résolution des incidents matériels et logiciels.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">06/2025 — 08/2025</div>
+          <h3>Stagiaire Technicien Support</h3>
+          <p class="timeline-sub">Sigvaris Group — Huningue</p>
+          <ul>
+            <li>Prise en charge des tickets utilisateurs et résolution des incidents matériels et logiciels.</li>
+            <li>Déploiement et configuration des postes de travail pour les commerciaux sur toute la France.</li>
+            <li>Installation et mise à jour des logiciels, périphériques et systèmes d'exploitation.</li>
+            <li>Gestion des comptes utilisateurs et droits d'accès.</li>
+            <li>Support technique à distance et accompagnement des utilisateurs.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">09/2024</div>
+          <h3>Vendeur — Chargé de vente</h3>
+          <p class="timeline-sub">Poulaillon — Blotzheim</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="section-head">
+      <span class="section-tag">04</span>
+      <h2>Projets techniques</h2>
+    </div>
+    <p class="section-intro">Projets réalisés dans le cadre du BTS SIO — infrastructure réseau, supervision, virtualisation et sécurité offensive.</p>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-icon">🏢</span>
+          <span class="project-badge">Réseau &amp; Infrastructure</span>
+        </div>
+        <h3>Infrastructure réseau EXPERTY</h3>
+        <p>
+          Conception et déploiement complet du réseau d'un cabinet d'expertise comptable :
+          170 prises RJ45, câblage CAT6a + fibre, VLANs, Wi-Fi interne/invités, VPN télétravail,
+          pare-feu et 2 routeurs Cisco ISR 4331. Cahier des charges, PBS, plan d'adressage et budget.
+        </p>
+        <div class="project-tags"><span>VLAN</span><span>Cisco</span><span>Câblage CAT6a</span><span>VPN</span><span>Pare-feu</span></div>
+        <a href="assets/docs/Procedure_Experty_Reseau_PME.pdf" target="_blank" class="project-link">Voir le dossier →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-icon">📊</span>
+          <span class="project-badge">Supervision</span>
+        </div>
+        <h3>Supervision réseau — Zabbix / Grafana / Observium</h3>
+        <p>
+          Maquette de supervision complète sous Debian 12 : collecte métrique et alerting avec Zabbix,
+          dashboards analytiques Grafana, découverte SNMP avec Observium. Pile LAMP sécurisée, SSL auto-signé.
+        </p>
+        <div class="project-tags"><span>Zabbix</span><span>Grafana</span><span>Observium</span><span>SNMP</span><span>Debian 12</span></div>
+        <a href="assets/docs/Supervision_Zabbix_Grafana_Observium.pdf" target="_blank" class="project-link">Voir la documentation →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-icon">🖥️</span>
+          <span class="project-badge">Intranet</span>
+        </div>
+        <h3>IntraCloud — Intranet d'entreprise Artis&amp;Co</h3>
+        <p>
+          Déploiement d'un intranet complet : galerie Piwigo, agrégateur RSS FreshRSS, forum MyBB
+          et helpdesk osTicket, chacun avec base de données et configuration Apache dédiées.
+        </p>
+        <div class="project-tags"><span>Apache</span><span>MySQL</span><span>Piwigo</span><span>osTicket</span></div>
+        <a href="assets/docs/Procedure_IntraCloud.pdf" target="_blank" class="project-link">Voir la procédure →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-icon">🔓</span>
+          <span class="project-badge">Cybersécurité</span>
+        </div>
+        <h3>Scan &amp; exploitation — Metasploit</h3>
+        <p>
+          Analyse réseau avec Nmap (découverte d'hôtes, scan SYN, détection OS/services) puis tentative
+          d'exploitation d'une faille SMB (MS17-010 / EternalBlue) via Metasploit en environnement contrôlé.
+        </p>
+        <div class="project-tags"><span>Nmap</span><span>Metasploit</span><span>Kali Linux</span><span>SMB</span></div>
+        <a href="assets/docs/TP_Cybersecurite_Metasploit.pdf" target="_blank" class="project-link">Voir le compte-rendu →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-icon">💻</span>
+          <span class="project-badge">Déploiement</span>
+        </div>
+        <h3>Déploiement d'un parc informatique</h3>
+        <p>
+          Masterisation de postes Windows client (NTLite, Sysprep, WSUS), automatisation du déploiement
+          et harmonisation d'un parc de machines pour un usage en entreprise.
+        </p>
+        <div class="project-tags"><span>NTLite</span><span>Sysprep</span><span>WSUS</span><span>Windows</span></div>
+        <a href="assets/docs/TP2_Deploiement_Parc_Informatique.pdf" target="_blank" class="project-link">Voir le rapport →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="section-head">
+      <span class="section-tag">05</span>
+      <h2>Diplômes &amp; Formations</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Depuis 09/2024</div>
+          <h3>BTS SIO — option SISR</h3>
+          <p class="timeline-sub">IRIS Mediaschool — Strasbourg</p>
+          <p>Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">09/2021 — 07/2024</div>
+          <h3>Bac Général &amp; Technologique</h3>
+          <p class="timeline-sub">Lycée Jean Mermoz — Saint-Louis</p>
+          <p>Option SIN (Système Informatique et Numérique).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt contact-section">
+    <div class="section-head centered">
+      <span class="section-tag">06</span>
+      <h2>Contact</h2>
+      <p class="section-intro">Disponible pour une alternance — n'hésitez pas à me contacter.</p>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:chamseddine.mecharbat@gmail.com" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <span>chamseddine.mecharbat@gmail.com</span>
+      </a>
+      <a href="tel:0652486592" class="contact-card">
+        <span class="contact-icon">📞</span>
+        <span>06 52 48 65 92</span>
+      </a>
+      <a href="https://www.linkedin.com/in/chamseddine-mecharbat-2a0888356/" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-icon">🔗</span>
+        <span>LinkedIn</span>
+      </a>
+      <div class="contact-card no-link">
+        <span class="contact-icon">📍</span>
+        <span>Huningue, Alsace</span>
+      </div>
+    </div>
+    <a href="assets/CV_Chamseddine_Mecharbat.pdf" target="_blank" class="btn btn-primary btn-large">Télécharger mon CV complet</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Chamseddine Mecharbat — Fait avec passion pour l'IT &amp; la cybersécurité.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
