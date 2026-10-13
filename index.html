@@ -10,6 +10,7 @@
 </head>
 <body>
 
+<canvas id="bgCanvas"></canvas>
 <div class="noise-overlay"></div>
 
 <nav id="navbar">
@@ -35,10 +36,6 @@
 
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-bg">
-      <div class="grid-lines"></div>
-      <canvas id="matrixCanvas"></canvas>
-    </div>
     <div class="hero-content">
       <p class="hero-eyebrow">$ whoami</p>
       <h1>Chamseddine <span class="accent">Mecharbat</span></h1>
@@ -160,6 +157,18 @@
       <h2>Expérience professionnelle</h2>
     </div>
     <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot-current"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">09/2026 — 09/2027 <span class="badge-current">En cours</span></div>
+          <h3>Apprenti Réseaux et Télécom</h3>
+          <p class="timeline-sub">Poulaillon — Service Informatique, Siège (Wittelsheim)</p>
+          <ul>
+            <li>Support utilisateur : assistance caisses magasin, dépannage utilisateurs.</li>
+            <li>Mise en place d'un nouveau système de caisse avec touches automatiques.</li>
+          </ul>
+        </div>
+      </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -340,6 +349,8 @@
   <p>© <span id="year"></span> Chamseddine Mecharbat — Fait avec passion pour l'IT &amp; la cybersécurité.</p>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/background3d.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
