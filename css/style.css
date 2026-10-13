@@ -73,11 +73,11 @@ ul{list-style:none;}
 /* ---------- NAV ---------- */
 #navbar{
   position:fixed; top:0; left:0; right:0; z-index:100;
-  background:rgba(10,14,20,0.82);
+  background:rgba(var(--bg-rgb), 0.82);
   border-bottom:1px solid transparent;
   transition:border-color .3s ease, background .3s ease;
 }
-#navbar.scrolled{ border-bottom-color:var(--border); background:rgba(10,14,20,0.92); }
+#navbar.scrolled{ border-bottom-color:var(--border); background:rgba(var(--bg-rgb), 0.94); }
 .nav-inner{
   max-width:var(--maxw); margin:0 auto; padding:16px 24px;
   display:flex; align-items:center; justify-content:space-between;
@@ -90,7 +90,7 @@ ul{list-style:none;}
 .logo .cursor{ animation:blink 1.1s steps(1) infinite; }
 @keyframes blink{ 50%{opacity:0;} }
 
-.nav-links{ display:flex; align-items:center; gap:28px; }
+.nav-links{ display:flex; align-items:center; gap:22px; }
 .nav-links a{
   font-size:.92rem; color:var(--text-dim); position:relative; padding:4px 0;
   transition:color .2s ease;
@@ -111,6 +111,17 @@ ul{list-style:none;}
   display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; z-index:110;
 }
 .nav-toggle span{ width:24px; height:2px; background:var(--text); transition:all .3s ease; }
+
+.theme-toggle{
+  display:flex; align-items:center; justify-content:center;
+  width:36px; height:36px; border-radius:50%;
+  background:var(--surface); border:1px solid var(--border); color:var(--text);
+  cursor:pointer; transition:border-color .2s ease, transform .2s ease, color .2s ease;
+}
+.theme-toggle:hover{ border-color:var(--accent); color:var(--accent); transform:rotate(15deg); }
+.theme-toggle svg{ display:none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun{ display:block; }
+:root[data-theme="light"] .theme-toggle .icon-moon{ display:block; }
 
 /* ---------- HERO ---------- */
 .hero{
@@ -319,7 +330,7 @@ footer{
   .about-grid{ grid-template-columns:1fr; }
   .skills-grid{ grid-template-columns:1fr 1fr; }
 }
-@media (max-width: 720px){
+@media (max-width: 900px){
   .nav-toggle{ display:flex; }
   .nav-links{
     position:fixed; top:0; right:0; height:100vh; width:min(78vw, 320px);
@@ -328,6 +339,8 @@ footer{
     padding:40px; transform:translateX(100%); transition:transform .3s ease; z-index:105;
   }
   .nav-links.open{ transform:translateX(0); }
+}
+@media (max-width: 720px){
   .skills-grid{ grid-template-columns:1fr; }
   .section{ padding:80px 20px; }
 }

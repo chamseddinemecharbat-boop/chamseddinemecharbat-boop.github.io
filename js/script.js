@@ -1,6 +1,15 @@
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Theme toggle (dark / light)
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+  const next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try { localStorage.setItem('theme', next); } catch (e) {}
+});
+
 // Navbar scroll state
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
